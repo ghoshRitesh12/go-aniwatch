@@ -1,7 +1,11 @@
 package goaniwatch
 
-import "fmt"
+import (
+	"github.com/ghoshRitesh12/go-aniwatch/parser"
+)
 
-func Main() {
-	fmt.Println("bruh")
+func New(args parser.HeaderArgs) *parser.Parser {
+	parser := parser.InitParser(args)
+
+	return parser
 }
